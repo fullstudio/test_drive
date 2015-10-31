@@ -1,0 +1,11 @@
+body
+	display: flex
+	flex-flow: column
+	min-height: 100vh
+	height: 100%
+	.header, .footer
+		flex-shrink: 0 // Set `flex-shrink` to `0` to prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size.
+	.stickyWrap
+		flex: 1 0 auto
+		display: flex
+		flex-direction: column
