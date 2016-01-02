@@ -18,7 +18,6 @@ gulp.task('default', function(cb) {
 			'images'
 		],
 		[
-			'webp',
 			'injectDev'
 		],
 		[

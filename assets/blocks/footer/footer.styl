@@ -1,3 +1,75 @@
-footer
-	font-size: 20px
-	text-align: center
+// background: #4997d0
+// background: #6a89a8
+// background: #2285a2
+// background: #85ab8f
+// background: #ab6a6a
+// background: #B09D8C
+// background: #f5f6f8
+// background: #aebab6
+// background: #7fc242
+// background: #ff7920
+// background: #3fbf79
+// background: #a1def8
+// background: #FFD800
+.footer
+	color: #fff
+	border-top: 2px solid #fd5c48
+	background: #575B59
+	margin-top: 30px
+	@media (max-width: 1024px)
+		text-align: center
+	&__menu__top
+		margin-top: 30px
+	&__menu
+		a
+			color: #fff
+	&__menu__logo
+		margin-bottom: 10px
+		margin-left: 10px
+		.fi-shield
+			color: #4997d0
+		.span
+			margin-right: 5px
+	&__menu__link
+		padding-bottom: 10px
+		li
+			display: inline-block
+			&::after
+				content "•"
+				padding: 0 10px
+			&:last-child
+				&::after
+					content ""
+					padding: 0 10px
+			a
+				list-style: none
+				font-weight: normal
+				color #fff
+				margin: 0
+				font-size: 15px
+	.contact
+		list-style-type none
+		margin 0
+		color #fff
+		.fi-mail
+			margin-right: 10px
+			font-size: 20px
+			span
+				font-size: 16px
+	.inline-list
+		a
+			width 40px
+			height 40px
+			background-color #fd5c48
+			border-radius 2px
+			font-size 32px
+			color #fff
+			text-align center
+			padding: 4px 8px
+			margin 8px
+		@media (max-width: 640px)
+			margin-top: 10px
+	.copywrite
+		color #8f9296
+		font-size 16px
+		margin-top: 15px

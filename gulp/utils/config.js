@@ -1,15 +1,20 @@
+// 'bower_components/jquery/dist/jquery.min.js',
 module.exports = {
 	bundles: [
 		{
 			name: 'libs',
 			css: [
 				'bower_components/bootstrap/dist/css/bootstrap.min.css',
-				'public/app/**/*.css'
+				'bower_components/foundation-sites/dist/foundation.min.css',
+				'public/app/vendor/owl-carousel/owl.carousel.css',
+				'public/app/vendor/*.css'
 			],
 			js: [
-				'bower_components/jquery/dist/jquery.min.js',
+				'public/app/vendor/owl-carousel/jquery-1.9.1.min.js',
 				'bower_components/jquery.browser/dist/jquery.browser.min.js',
-				'bower_components/picturefill/dist/picturefill.min.js'
+				'bower_components/picturefill/dist/picturefill.min.js',
+				'bower_components/foundation-sites/dist/foundation.min.js',
+				'public/app/vendor/owl-carousel/owl.carousel.min.js'
 			],
 			pages: [
 				'public/*.html',

@@ -1,3 +1,28 @@
-header
-	.container
-		| Header
+// header start
+header.header
+	.row
+		.header__menu.float-center
+			.title-bar(data-responsive-toggle='main-menu', data-hide-for='medium')
+				button.menu-icon.right(type='button', data-toggle='')
+			.top-bar-left
+				.header__logo
+					h2.header__logo__text
+						FullStudio
+					a(href="#")
+						img(src="../img/logo.png", alt="logo")
+			#main-menu.top-bar.header__menu__right
+				.top-bar-right
+					ul.menu.vertical.medium-horizontal(data-responsive-menu='drilldown medium-dropdown')
+						li
+							a(href='#') One
+						li
+							a(href='#') Two
+						li
+							a(href='#') Three
+						li
+							a(href='#') One
+						li
+							a(href='#') Two
+						li
+							a(href='#') Three
+// header and
