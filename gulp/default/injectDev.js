@@ -17,16 +17,17 @@ gulp.task('injectDev', function(done) {
 			name: bundle.name,
 			ignorePath: 'public'
 		}))
-		.pipe(gulp.dest('public'))
-		.pipe(browserSync.reload({stream: true}))
-		.on('finish', next);
-	}, done());
+		.pipe(gulp.dest(bundle.destHtml))
+		.on('finish', next)
+		// .pipe(browserSync.reload({stream: true}))
+	}, done)
 });
 
 gulp.task('jadeInject', function(cb) {
 	runSequence(
 		'jade',
 		'injectDev',
+		'reload',
 		cb
 	);
 });

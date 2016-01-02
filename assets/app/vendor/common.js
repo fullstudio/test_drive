@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-	var sync1 = $["#sync1", "#sync3"];
-	var sync2 = $["#sync2", "#sync4"];
+	var sync1 = $("#sync1");
+	var sync2 = $("#sync2");
 
 	sync1.owlCarousel({
 		singleItem : true,
 		slideSpeed : 1000,
-		navigation: true,
+		navigation: false,
 		pagination:false,
 		afterAction : syncPosition,
 		responsiveRefreshRate : 200,
